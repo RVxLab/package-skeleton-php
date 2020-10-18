@@ -1,0 +1,18 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+    paths:
+        - .
+
+    level: 8
+
+    excludes_analyse:
+        - vendor/*
+        - .github
+
+    checkMissingIterableValueType: false
+
+    ignoreErrors:
+        - message: '#Undefined variable\: \$this#'
+          path: 'tests/'

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash -e
 # 'return' when run as "source <script>" or ". <script>", 'exit' otherwise
 [[ "$0" != "${BASH_SOURCE[0]}" ]] && safe_exit="return" || safe_exit="exit"
 
